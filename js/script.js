@@ -122,8 +122,9 @@ document.getElementById("copon-btn").addEventListener("click",
             document.getElementById("copon").value = '';
             coponStatus = true;
             calculateSupperTotal();
-            document.getElementById("copon-btn").innerHTML = 'Applied'
+            document.getElementById("copon-btn").innerHTML = 'Applied';
             document.getElementById("copon-btn").classList.add("disabled");
+            document.getElementById("copon").disabled = true;
         }
         else{
             alert("Copon Not Applicable.");

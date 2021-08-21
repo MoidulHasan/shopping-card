@@ -16,8 +16,6 @@
 
     <!-- FONT AWSOME CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="styles/style.css">
 
 </head>
 
@@ -41,9 +39,12 @@
                 <div class="mt-1">
                     <h6>Memory</h6>
                     <div class="d-flex">
-                        <button type="button" class="btn btn-outline-secondary m-1 p-0 p-md-2 active">8GB Unified
+                        <button type="button" id="memory-8GB-btn"
+                            class="btn btn-outline-secondary  m-1 p-0 p-md-2 border border-2 border-primary">8GB Unified
                             Memory</button>
-                        <button type="button" class="btn btn-outline-secondary m-1 p-0  p-md-2">16GB Unified
+                        <button type="button" id="memory-16GB-btn"
+                            class="btn btn-outline-secondary m-1 p-0 p-md-2 border border-2">16GB
+                            Unified
                             Memory</button>
                     </div>
                 </div>
@@ -51,12 +52,16 @@
                 <div class="mt-1">
                     <h6>Storage</h6>
                     <div class="d-flex">
-                        <button type="button"
-                            class="btn btn-outline-secondary m-1 p-0  p-md-2 active">256GB SSD
+                        <button type="button" id="ssd-256GB-btn"
+                            class="btn btn-outline-secondary m-1 p-0  p-md-2 border border-2 border-primary">256GB SSD
                             Storage</button>
-                        <button type="button" class="btn btn-outline-secondary m-1 p-0  p-md-2">512GB SSD
+                        <button type="button" id="ssd-512GB-btn"
+                            class="btn btn-outline-secondary  m-1 p-0 p-md-2 border border-2">512GB
+                            SSD
                             Storage</button>
-                        <button type="button" class="btn btn-outline-secondary m-1 p-0  p-md-2">1TB SSD Storage</button>
+                        <button type="button" id="ssd-1TB-btn"
+                            class="btn btn-outline-secondary  m-1 p-0 p-md-2 border border-2">1TB SSD
+                            Storage</button>
                     </div>
                 </div>
 
@@ -64,11 +69,15 @@
                 <div class="mt-1">
                     <h6>Choose Your Delivery Option</h6>
                     <div class="d-flex">
-                        <button type="button"
-                            class="btn btn-outline-secondary p-0  p-md-2 active">Wednesday, Aug 25 FREE
+                        <button type="button" id="delivery-free-btn"
+                            class="btn btn-outline-secondary m-1 p-0 p-md-2 border border-2 border-primary">Wednesday,
+                            Aug
+                            25
+                            FREE
                             Prime
                             Delivery</button>
-                        <button type="button" class="btn btn-outline-secondary ms-1 p-0  p-md-2">Saturday, Aug 21
+                        <button type="button" id="delivery-prime-btn"
+                            class="btn btn-outline-secondary  m-1 p-0 p-md-2 border border-2">Saturday, Aug 21
                             Delivery Charge
                             $20</button>
                     </div>
@@ -90,7 +99,7 @@
                             <h6>Extra Memory Cost</h6>
                         </div>
                         <div class="col-4">
-                            <h6>$0</h6>
+                            <h6>$<span id="memoryPrice">0</span></h6>
                         </div>
                     </div>
                     <hr class="p-0 m-0">
@@ -100,7 +109,7 @@
                             <h6>Extra Storage Cost</h6>
                         </div>
                         <div class="col-4">
-                            <h6>$0</h6>
+                            <h6>$<span id="storagePrice">0</span></h6>
                         </div>
                     </div>
                     <hr class="p-0 m-0">
@@ -110,7 +119,7 @@
                             <h6>Delivery Charge</h6>
                         </div>
                         <div class="col-4">
-                            <h6>$0</h6>
+                            <h6>$<span id="deliveryCharge">0</span></h6>
                         </div>
                     </div>
                     <hr class="mt-1 border border-1 border-dark">
@@ -120,17 +129,17 @@
                             <h6>Total Price</h6>
                         </div>
                         <div class="col-4">
-                            <h6>$1299</h6>
+                            <h6>$<span id="totalPrice">1299</span></h6>
                         </div>
                     </div>
                 </div>
                 <h6>Add Copon Code</h6>
                 <div class="d-flex">
                     <div>
-                        <input class="border border-3" type="text">
+                        <input class="border border-3" id="copon" type="text">
                     </div>
                     <div>
-                        <button type="button" class="btn btn-outline-secondary btn-sm ms-3">Apply</button>
+                        <button type="button" id="copon-btn" class="btn btn-outline-primary btn-sm ms-3">Apply</button>
                     </div>
                 </div>
             </div>
@@ -138,7 +147,7 @@
             <!-- TOTAL PRICE SECTION -->
             <div class="w-75 mt-1">
                 <hr class="border border-1 border-dark mt-1 m-0">
-                <h4 class="text-center"><span class="me-5">Total: </span>$<span class="">1299</span> </h4>
+                <h4 class="text-center"><span class="me-5">Total: </span>$<span id="superTotalPrice">1299</span> </h4>
             </div>
 
         </div>
@@ -152,6 +161,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
+    <!-- MAIN JAVASCRIPT SCRIPT -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
